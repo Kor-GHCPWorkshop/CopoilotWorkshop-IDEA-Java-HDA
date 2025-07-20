@@ -2,7 +2,7 @@
 
 ## Use case: 
 - Copilot에게 Custom instruction을 제공하여 원하는 형태로 코드 제안을 받습니다.
-- Chat Mode를 설정하여, Agent 모드에서 기본 제공 모드 외에 원하는 커스텀 모드를 설정해 봅니다.
+- Copilot으로 Commit message를 자동 생성해 봅니다. 이 때, 원하는 형태의 Commit message를 생성하기 위해, Custom instruction을 활용합니다.
 - (선택사항) GitHub MCP Server를 설정하는 방법을 익힙니다. (이후 Task 4에서 실습)
 
 ## 목표:

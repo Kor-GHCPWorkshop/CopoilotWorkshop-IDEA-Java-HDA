@@ -42,42 +42,33 @@
 
 - [IntelliJ IDEA에서 MCP 서버설정: GitHub도움말](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/context/model-context-protocol/extending-copilot-chat-with-mcp?tool=jetbrains)을 참고하여, MCP 서버를 설정합니다. <br>
 
-- 우측 하단의 GitHub Copilot 아이콘을 클릭하고고, '`Add More Tools`'를 선택합니다. <br>
+- 우측 하단의 GitHub Copilot 아이콘을 클릭하고, '`Edit Settings`'를 선택합니다. <br>
   <img src="./img/02.png" width="300"> <br>
   <img src="./img/03.png" width="300"> <br>
 
-- `Add MCP server`를 선택합니다. <br>
-  <img src="./img/04.png" width="400"> <br>
+- 'Configure'를 클릭하면, mcp.json 파일이 열립니다. <br>
+  <img src="./img/04.png" width="300"> <br>
+  <img src="./img/05.png" width="500"> <br>
 
-- NPM Package를 선택하고 `@modelcontextprotocol/server-filesystem` 를 입력합니다. <br>
-  <img src="./img/06.png" width="400"> <br>
+## Step 3: MCP 서버 설정하기
+- mcp.json 파일의 "servers" 섹션에 아래 부분을 복사하여 붙여 넣어, MCP 서버를 추가합니다.
 
-- Allow를 선택하고, 비어있는 Temp 디렉토리를 생성하고 패스를 입력합니다. <br>
+```json
+"memory": {
+	"command": "npx",
+	"args": [
+		"-y",
+		"@modelcontextprotocol/server-memory"
+	]
+}
+```
+
+- 위와 같이 설정한 뒤, Copilot Chat 의 도구 모양 아이콘을 클릭하여 추가된 MCP 서버를 확인합니다. <br>
+  <img src="./img/06.png" width="300"> <br>
   <img src="./img/07.png" width="400"> <br>
-  <img src="./img/08.png" width="400"> <br>
-
-- Server ID에서는 그냥 Enter를 눌러 기본값을 사용합니다. <br>
-  <img src="./img/09.png" width="400"> <br>
-
-- `User settings` 혹은 `Workspace settings`을 선택합니다. 여기서는 `Workspace settings`을 선택합니다. <br>
-  <img src="./img/10.png" width="400"> <br>
-
-- mcp.json 파일에 추가된 MCP 서버 설정을 확인합니다. <br>
-  <img src="./img/11.png" width="600"> <br>
-
-- 다시 Agent 모드의 공구 모양 아이콘을 클릭하고, 추가된 Tool을 확인합니다. <br>
-  <img src="./img/12.png" width="500"> <br>
 
 
-## Step 3: MCP 서버 테스트
-
-- 'filesystem'을을 테스트 하기 위해 Agent 모드에서 아래와 같이 실행해 봅니다. <br>
-  - `C:/temp 디렉토리에 testmcp.md라는 이름으로 새로운 파일을 생성해줘`
-  - `C:/temp 디렉토리에 생성된 testmcp.md파일을 C:/temp/Logs 디렉토리로 옮겨줘` --> MCP tool이 실행됩니다. <br>
-  <img src="./img/13.png" width="400"> <br>
-  <img src="./img/14.png" width="400"> <br>
-
-## Step 4: Stdio MCP 서버 설정
+## Step 4: 로컬에 Stdio MCP 서버 설정
 - https://github.com/modelcontextprotocol/python-sdk 의 파이썬 예제를 구성하고 stdio MCP 서버를 설정해 봅니다. 
 - uv 매니져 설치
   - https://docs.astral.sh/uv/#installation
@@ -104,6 +95,20 @@
 		"""Add two numbers"""
 		return a + b
 
+	# Add tool to get the document content
+	@mcp.tool()
+	def get_document_content() -> str:
+		"""Get the content of a document"""
+		doc_name = "../doc/06.CopilotStandalone.md"
+		with open(doc_name, "r", encoding="utf-8") as f:
+			return f.read()
+
+	# Add a dynamic greeting resource
+	# @mcp.resource("greeting://{name}")
+	# def get_greeting(name: str) -> str:
+	#     """Get a personalized greeting"""
+	#     return f"Hello, {name}!"
+
 	if __name__ == "__main__":
 		mcp.run()
 	```
@@ -121,43 +126,10 @@
             ]
         }
 	```
-  - 추가된 서버가 실행되고 있지 않다면, mcp.json 설정 파일의 해당 MCP서버 위에 표시되어 있는 'start' 버튼을 클릭합니다. 
-  <img src="./img/15.png" width="500"> <br>
+  <img src="./img/08.png" width="400"> <br>
 
 - Agent모드의 MCP Tool에 도구가 추가된 것을 확인합니다. 
-
-## Step 5: Docker 형태의 MCP 서버 설정 (GitHub MCP server)
- - https://github.com/github/github-mcp-server 저장소의 GitHub MCP 서버를 Docker 형태로 설정합니다.
- - 이 MCP 서버는 사용자 랩탑에 Docker 엔진이 실행되고 있어야 합니다. (docker desktop 설치 필요)
- - 저장소 Readme 파일의 Installation 부분에 있는 설정 방법을 `mcp.json` 파일에 추가하여 tool이 추가되는 것을 확인합니다. 
-   ```json
-	"inputs": [
-			{
-			"type": "promptString",
-			"id": "github_token",
-			"description": "GitHub Personal Access Token",
-			"password": true
-			}
-		],
-		"servers": {
-			"github": {
-				"command": "docker",
-				"args": [
-				"run",
-				"-i",
-				"--rm",
-				"-e",
-				"GITHUB_PERSONAL_ACCESS_TOKEN",
-				"ghcr.io/github/github-mcp-server"
-				],
-				"env": {
-				"GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
-				}
-			}
-		}
-
-	```
- - 'start' 버튼을 클릭하여 MCP 서버를 시작합니다.
+  <img src="./img/09.png" width="400"> <br>
 
 
 ## Step 6: Atlassian MCP 서버와 연결하기
@@ -173,6 +145,10 @@
 	- `confluence_get_page`: Get content of a specific page
 	- `confluence_create_page`: Create a new page
 	- `confluence_update_page`: Update an existing page
+
+## Step 7: MCP 로그 확인하기
+- 좌측 하단에 GitHub Copilot MCP Log' 버튼을 클릭하여 MCP 로그를 확인합니다. <br>
+ <img src="./img/16.png" width="400"> <br>
 
 ## 지식 확인
 - MCP의 구조와 기능, 연결 방법은 어떤 것들이 있습니까?

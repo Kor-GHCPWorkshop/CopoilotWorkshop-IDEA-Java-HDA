@@ -34,26 +34,22 @@
  - 이미지를 Copilot Chat에 컨텍스트로 제공하고(Vision기능), 이미지를 통해 코드를 제안받아 봅니다. (Vision)
 
 ## [Task 3](/Task03/README.md): Spring Boot 기반 Todo App 개발 (Part 1)
- - Java 17과 Gradle로 구축된 Spring Boot 3.4.2 웹 애플리케이션 실습입니다.
- - Copilot에게 Custom instruction을 제공하여 원하는 형태로 코드 제안을 받습니다.
- - Chat Mode를 설정하여, Agent 모드에서 기본 제공 모드 외에 원하는 커스텀 모드를 설정해 봅니다.
- - (선택사항) GitHub MCP Server를 설정하는 방법을 익힙니다. (이후 Task 4에서 실습)
+- 프로젝트를 구성하기 위해, Copilot에게 Custom instruction을 제공하는 방법을 실습합니다.
+- Copilot으로 Commit message를 자동 생성해 봅니다. 이 때, 원하는 형태의 Commit message를 생성하기 위해, Custom instruction을 활용합니다.
+- (선택사항) GitHub MCP Server를 설정하는 방법을 익힙니다. (이후 Task 4에서 실습)
 
 ## [Task 4](/Task04/README.md): Spring Boot 기반 Todo App 개발 (Part 2)
-- Task03(Part 1)에서 생성된 커스텀 instructions와 커스텀 Chat mode를 활용하여 Django 웹앱을 실제로 빌드합니다. 
-- (선택사항) GitHub.com이 활용 가능한 경우, 커스텀 모드인 Plan 모드를 사용해 Planning된 내용을, GitHub MCP Server를 활용하여, Copilot Chat에서 GitHub 저장소에 Issue를 등록해 봅니다.  
-- (선택사항) GitHub.com이 활용 가능한 경우, Coding Agent를 활용해 기능을 구현해 봅니다. (프리미엄 리퀘스트 사용)
-  - Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Copilot 자동 Code Review를 통해 코드 리뷰를 받아 봅니다. (프리미엄 리퀘스트 사용)
+- 이전 Task03(Part 1)에서 생성된 커스텀 instructions를 활용하여 Agent모드에서 Spring Boot 기반 Todo App을 실제로 빌드합니다. 
+- Agent 모드에서 개발과정의 내용을 커밋하고 , 커밋 메시지를 작성하도록 프롬프트로 요청합니다. 
+- TODO앱에 '즐겨찾'를 추가하는 기능도 Agent 모드에서 구현합니다
 
 ## [Task 5](/Task05/README.md): 프롬프트와 컨텍스트 사용 
-- Prompt 파일에 대해 알아보고, 프롬프트 파일을 생성하여 테스트 코드 및 보안 점검에 활용해 봅니다. 
 - 효율적인 프롬프트 작성과 컨텍스트 활용 방법을 익힙니다. 
 - Copilot Chat에 추가할 수 있는 다양한 컨텍스트들에 대해 확인합니다. 
-- CLI 명령어 창에서 Copilot을 활용하는 방법을 익힙니다.
-- Copilot을 활용해 Commit message를 자동 생성합니다.
 
-## [Task 6](/Task06/README.md): 코드 리팩토링, 보안 문제 확인
-  - 주어진 코드 블럭을 Copilot을 활용하여 리팩토링 하거나, 보안 문제를 확인해 보는 실습 예제 입니다.
+## [Task 6](/Task06/README.md): Copilot을 통해 Java version 업그레이드, 코드 리팩토링, 보안 문제 확인
+- GitHub Copilot을 활용하여 Java version 업그레이드를 진행합니다. (VS Code활용)
+- GitHub Copilot을 활용해 코드 리팩토링과 보안 문제를 확인합니다.
   
 ## [Task 7](/Task07/README.md): CI/CD 파이프라인 실습 
   - 주어진 파이프라인에 대한 설명과 변환등을 GitHub Copilot을 사용하여 실습하는 예제입니다.

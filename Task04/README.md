@@ -1,16 +1,20 @@
 # Task 4: Spring Boot 기반 Todo App 개발 (Part 2) 
 
 ## Use case: 
-- 이전 Task03(Part 1)에서 생성된 커스텀 instructions를 활용하여 Spring Boot 기반 Todo App을 실제로 빌드합니다. 
+- 이전 Task03(Part 1)에서 생성된 커스텀 instructions를 활용하여 Agent모드에서 Spring Boot 기반 Todo App을 실제로 빌드합니다. 
+- Agent 모드에서 개발과정의 내용을 커밋하고 , 커밋 메시지를 작성하도록 프롬프트로 요청합니다. 
+- TODO앱에 '즐겨찾'를 추가하는 기능도 Agent 모드에서 구현합니다.
 - (선택사항) GitHub.com이 활용 가능한 경우, Copilot을 사용해 Planning된 내용을, GitHub MCP Server를 활용하여, Copilot Chat에서 GitHub 저장소에 Issue를 등록해 봅니다.  
 - (선택사항) GitHub.com이 활용 가능한 경우, Coding Agent를 활용해 기능을 구현해 봅니다. (프리미엄 리퀘스트 사용)
   - Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Copilot 자동 Code Review를 통해 코드 리뷰를 받아 봅니다. (프리미엄 리퀘스트 사용)
 
 ## 목표: 
 - 모델 사용시, Standard Model과 Premium Model의 차이, Premium 모델 사용시 기본 제공되는 사용량을 이해합니다. 
-- Agent 모드를 활용해 프로젝트를 생성해 봅니다.
+- Agent 모드를 활용해 프로젝트를 생성해 봅니다
+- Agent 모드에서 개발과정의 내용을 커밋하고 , 커밋 메시지를 작성하도록 프롬프트로 요청합니다. 
+- TODO앱에 '즐겨찾'를 추가하는 기능도 Agent 모드에서 구현합니다.
 - (선택사항) GitHub MCP Server를 활용하여, Copilot Chat에서 GitHub 저장소에 Issue를 등록하는 방법을 익힙니다. 
-- TODO앱에 '범주'를 추가하는 기능도 Agent를 통해 구성합니다.
+-  Agent를 통해 구성합니다.
   - (선택사항) 이 기능을 Coding Agent를 활용해 기능을 구현해 봅니다. (프리미엄 리퀘스트 사용)
 - (선택사항) Copilot을 통해 자동 코드 리뷰를 받는 구성을 하고, Copilot 자동 Code Review를 통해 코드 리뷰를 받아 봅니다. (프리미엄 리퀘스트 사용)
 
