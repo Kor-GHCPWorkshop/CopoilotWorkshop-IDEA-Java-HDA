@@ -1,18 +1,18 @@
 # Task 8: MCP (Model Context Protocol) 활용 실습
 
 ## Use case: 
-- VS Code에서 Model Context Protocol 서버를 설정하고, 실습하는 예제입니다.
+- IntelliJ IDEA에서 Model Context Protocol 서버를 설정하고, 실습하는 예제입니다.
 
 ## 목표:
-- MCP (Model Context Protocol)의 기능을 이해하고, VS Code에서 MCP 서버를 설정하여 활용하는 방법을 익힙니다.
+- MCP (Model Context Protocol)의 기능을 이해하고, IntelliJ IDEA에서 MCP 서버를 설정하여 활용하는 방법을 익힙니다.
 
 ## Step 1: MCP (Model Context Protocol) 이해하기
 ### MCP란? 
-  - [Model Context Protocol(MCP)](https://modelcontextprotocol.io/introduction)는 AI 모델이 외부 도구, 애플리케이션, 데이터 소스를 탐색하고 상호작용할 수 있도록 표준화된 방법을 제공합니다. VS Code에서 에이전트 모드로 언어 모델에 채팅 프롬프트를 입력하면, 모델은 파일 작업, 데이터베이스 접근, API 호출 등 다양한 도구를 호출하여 요청에 응답할 수 있습니다.
+  - [Model Context Protocol(MCP)](https://modelcontextprotocol.io/introduction)는 AI 모델이 외부 도구, 애플리케이션, 데이터 소스를 탐색하고 상호작용할 수 있도록 표준화된 방법을 제공합니다. IntelliJ IDEA에서 에이전트 모드로 언어 모델에 채팅 프롬프트를 입력하면, 모델은 파일 작업, 데이터베이스 접근, API 호출 등 다양한 도구를 호출하여 요청에 응답할 수 있습니다.
   - [MCP Specification](https://modelcontextprotocol.io/specification/2025-03-26) 
 
 ### MCP 구조 : 클라이언트 - 서버 구조
-  - MCP clients (like VS Code) connect to MCP servers and request actions on behalf of the AI model
+  - MCP clients (like IntelliJ IDEA) connect to MCP servers and request actions on behalf of the AI model
   - MCP servers provide one or more tools that expose specific functionalities through a well-defined interface
   - The Model Context Protocol (MCP) defines the message format for communication between clients and servers, including tool discovery, invocation, and response handling <br>
 
@@ -38,11 +38,11 @@
   에서 다양한 MCP 서버를 확인할 수 있습니다.
 
 
-## Step 2: VS Code에서 테스트 MCP 서버 설정 (npm 패키지 설치)
+## Step 2: IntelliJ IDEA에서 테스트 MCP 서버 설정 (npm 패키지 설치)
 
-- [VS Code에서 MCP 서버설정: GitHub도움말](https://docs.github.com/en/enterprise-cloud@latest/copilot/customizing-copilot/extending-copilot-chat-with-mcp?tool=vscode)을 참고하여, MCP 서버를 설정합니다. <br>
+- [IntelliJ IDEA에서 MCP 서버설정: GitHub도움말](https://docs.github.com/en/enterprise-cloud@latest/copilot/how-tos/context/model-context-protocol/extending-copilot-chat-with-mcp?tool=jetbrains)을 참고하여, MCP 서버를 설정합니다. <br>
 
-- 먼저, VS Code Agent 모드의 공구 모양 아이콘을 클릭하고, '`Add More Tools`'를 선택합니다. <br>
+- 우측 하단의 GitHub Copilot 아이콘을 클릭하고고, '`Add More Tools`'를 선택합니다. <br>
   <img src="./img/02.png" width="300"> <br>
   <img src="./img/03.png" width="300"> <br>
 

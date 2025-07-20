@@ -7,10 +7,10 @@
 - 주석을 활용하여, 간단한 함수 (factorial, is_prime)를 코드완성 기능으로 작성합니다. 
 - 작성한 함수에 대한 테스트 코드를 작성합니다.
 - GitHub Copilot Log를 확인하여, 오픈소스와 매치되는 코드인 경우 레퍼런스 정보를 확인합니다. 
-- VS Code의 Copilot 메뉴에 관한 기본적인 설정들을 변경해 봅니다.
+- IntelliJ IDEA의 Copilot 메뉴에 관한 기본적인 설정들을 변경해 봅니다.
 
 ## Step 1 : 기본 함수 작성
-- VS Code를 열고, 새로운 파일을 생성합니다. (factorial.py)<br>
+- IntelliJ IDEA를 열고, 새로운 파일을 생성합니다. (factorial.py)<br>
   <img src = "img/01.png" width = "400">
 
 - 아래의 주석을 입력 합니다.<br>
@@ -63,8 +63,8 @@
      <img src = "img/18.png" width = "500">
 
 
-## Step 4 : VS Code의 Copilot 설정 메뉴
-- VS Code에서 Ctrl + Shift + P를 눌러 명령 팔레트를 열고, 'preference'을 검색하여, `Preference: Open Settings (UI)`를 선택합니다.<br>
+## Step 4 : IntelliJ IDEA의 Copilot 설정 메뉴
+- Intelli J에서 Ctrl + Shift + P를 눌러 명령 팔레트를 열고, 'preference'을 검색하여, `Preference: Open Settings (UI)`를 선택합니다.<br>
     <img src = "img/09.png" width = "500">
 - Copilot locale을 검색하고, 'ko'로 변경합니다.<br>
     <img src = "img/10.png" width = "500">
@@ -80,14 +80,14 @@
 - Experimental 기능인 `NES(Next Edit Suggestion)`을 활성화/비활성화 해봅니다.<br>
     <img src = "img/14.png" width = "400">
 
-- Reference : [VS Code Copilot settings reference 문서](https://code.visualstudio.com/docs/copilot/copilot-settings)
+- Reference : [Intelli J Copilot settings reference 문서](https://code.visualstudio.com/docs/copilot/copilot-settings)
 
 
 ## 지식 확인
 - GitHub Copilot의 코드 완성 기능
 - 코드완성 기능의 모델 선택
 - GitHub Copilot의 코드 완성 기능의 컨텍스트
-- VS Code의 Copilot 설정 메뉴
+- IntelliJ IDEA의 Copilot 설정 메뉴
 
 
 
