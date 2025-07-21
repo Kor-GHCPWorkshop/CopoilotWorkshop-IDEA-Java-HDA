@@ -5,7 +5,7 @@
 
 ## 실습 환경
 - IntelliJ IDEA를 활용합니다.
-  * Task 6에서 실습하는 Java upgrade 실습은 VS Code에서만 지원되어, VS Code를 활용합니다.
+  * Task 6에서 실습하는 Java 버전 upgrade 실습은 VS Code에서만 지원되어, VS Code를 활용합니다.
 - GitHub Copilot 플러그인을 설치하고, GitHub Copilot Business 라이센스가 있는 계정으로 로그인하여 사용할 수 있는 상태여야 합니다.
 - GitHub Copilot 플러그인은 **최신 버전으로 업데이트 되어 있어야 합니다.**
 
@@ -30,8 +30,8 @@
  - GitHub Copilot과 함께 가위, 바위, 보 게임을 만들어 봅니다.
  - Copilot을 통해 테스트 코드를 작성해 봅니다.
  - Copilot chat의 각종 메뉴들을 사용해 봅니다.
- - Copilot Code Review를 통해, 코드에 대한 리뷰를 받아 봅니다.
- - 이미지를 Copilot Chat에 컨텍스트로 제공하고(Vision기능), 이미지를 통해 코드를 제안받아 봅니다. (Vision)
+
+ 
 
 ## [Task 3](/Task03/README.md): Spring Boot 기반 Todo App 개발 (Part 1)
 - 프로젝트를 구성하기 위해, Copilot에게 Custom instruction을 제공하는 방법을 실습합니다.
