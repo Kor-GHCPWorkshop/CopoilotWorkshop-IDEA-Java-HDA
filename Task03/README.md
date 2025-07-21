@@ -13,8 +13,8 @@
 
 ## Step 1: 새로운 프로젝트 시작하기
 - IntelliJ IDEA에서 새로운 프로젝트를 생성합니다.
-- Gradle을 사용하여 Java 11 기반의 프로젝트를 생성합니다.
- <img src="img/14.png" width="400"> <br>
+- Gradle을 사용하여 Java 11 기반의 프로젝트를 생성합니다.<br>
+ <img src="img/14.png" width="600"> <br>
 
 
 ## Step 2: Custom instructions 란 
@@ -84,15 +84,15 @@
   <img src="img/01.png" width="400"> <br>
 
 - Custom instructions를 선택합니다. <br> 
-  <img src="img/02.png" width="400"> <br>
+  <img src="img/02.png" width="600"> <br>
 
 - Copilot instructions 의 Workspace를 선택하고, 빈 파일이 생성되면, 예제로 제공된 현재 디렉토리의 `.github/instructions` 디렉토리의 파일을 복사하여 활용합니다. <br>
-  <img src="img/03.png" width="500"> <br>
+  <img src="img/03.png" width="700"> <br>
  
 
 ### 4-1. 기존 프로젝트에서 custom instructions 생성하기
-- 이 기능은 VS Code에서 가능합니다.
-- 기존 프로젝트를 VS Code로 오픈합니다.
+- 이 기능은 `VS Code`에서 가능합니다.
+- 기존 프로젝트를 `VS Code`로 오픈합니다.
 - VS Code의 GitHub Copilot 플러그인 설치, 계정 로그인 후, Copilot Chat을 엽니다.
 - Copilot Chat창의 우측 상단에 톱니 바퀴 아이콘을 클릭하고, `Generate Instructions`를 선택합니다. <br>
 	<img src="img/39.png" width="200"> <br>
@@ -135,13 +135,13 @@
 - [Chat mode 파일 예시](https://code.visualstudio.com/docs/copilot/chat/chat-modes#_chat-mode-file-example) <br>
 
 
-## Step 6: Git 활성화 하기
+## Step 7: Git 활성화 하기
 - `.gitignore` 파일을 생성합니다. <br>
   - Copilot Chat에서 `Agent` 모드를 선택하고, 아래와 같이 요청합니다. <br>
   - `자, 이제 이 프로젝트의 gitignore 파일을 생성해 줘.` <br>
   - 생성된 .gitignore 파일을 확인합니다. <br>
 
-- IntelliJ IDEA에서 Git을 활성화합니다.
+- IntelliJ IDEA에서 Git을 활성화합니다.<br>
  <img src="img/04.png" width="400"> <br>
  <img src="img/05.png" width="400"> <br>
 
@@ -172,12 +172,26 @@
 - 위 github-mcp-server 저장소의 설정 파일의 내용을 복사합니다. <br> 
   - [설정 파일 링크](https://github.com/github/github-mcp-server/blob/main/docs/installation-guides/install-other-copilot-ides.md#local-server-1)
 
+  ```json
+   "github": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm", 
+        "-e", "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
+      }
+    }
+  ```
+
 - IDEA 우측 하단의 GitHub Copilot 아이콘을 클릭하고, `Edit Settings`를 선택하고, 이어지는 화면에서 Model Context Protocol을 선택하여 설정합니다. <br>
   <img src="img/09.png" width="400"> <br>
   <img src="img/10.png" width="400"> <br>
 
 - 위에서 복사한 설정 파일의 내용을 붙여 넣고 저장합니다. <br>
-  <img src="img/11.png" width="400"> <br>
+  <img src="img/11.png" width="600"> <br>
 
 - GitHub Personal Access Token을 추가합니다. <br>
   - GitHub.com에서 Personal Access Token을 생성하고, 해당 토큰을 MCP Server 설정에 추가합니다. <br>

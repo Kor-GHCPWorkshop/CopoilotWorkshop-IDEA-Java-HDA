@@ -15,9 +15,9 @@
 - 사용자가 선택한 가위, 바위, 보와 컴퓨터의 선택을 비교하여 승패를 결정하는 로직을 추가합니다.
 - 사용자가 게임을 계속할 것인지 종료할 것인지 선택할 수 있는 로직을 추가합니다.<br>
    <img src="img/01.png" alt="image" width="500"/><br>
-   <img src="img/02.png" alt="image" width="800"/><br>
+   <img src="img/02.png" alt="image" width="500"/><br>
    <img src="img/03.png" alt="image" width="500"/><br>
-   <img src="img/04.png" alt="image" width="500"/><br>
+   <img src="img/04.png" alt="image" width="600"/><br>
 
 - 게임을 실행하고, 게임 결과를 출력 받아 봅니다.<br>
    <img src="img/05.png" alt="image" width="700"/><br>
@@ -65,7 +65,7 @@
   <img src="img/20.png" alt="image" width="400"/><br>
 - `MainTest.java`에서 import org.example.Main;를 추가하고, 테스트를 실행하여 결과를 확인합니다. <br>
   <img src="img/21.png" alt="image" width="400"/><br>
-  <img src="img/22.png" alt="image" width="800"/><br>
+  <img src="img/22.png" alt="image" width="1000"/><br>
 
 ## 지식 확인:
 - 코드 완성 기능과, Copilot Chat 기능의 차이점
