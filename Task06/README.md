@@ -20,7 +20,7 @@
   - [GitHub Copilot 셋업하기](https://code.visualstudio.com/docs/copilot/setup#_set-up-copilot-in-vs-code)
 
 - 타겟 버전: Java SDK 17 설치
-- [VS Code의 GitHub Copilot app modernization 확장 팩 설치](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-app-mod-pack). 설치 지침은 다음 섹션을 참조하세요.
+- [VS Code의 GitHub Copilot app modernization 확장 팩 설치](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-app-mod-pack). 
 
   - 이 확장 팩은 다음 두 확장을 번들로 묶습니다.
      - Java용 GitHub Copilot 앱 현대화(미리 보기)
@@ -36,61 +36,61 @@
 ### 1-3. Java version 업그레이드 실습
 - VS Code에서 Task03, Task04에서 생성한 Spring Boot 기반 Todo App 프로젝트를 엽니다.
 - VS Code의 왼쪽 사이드바에서 확장 아이콘을 클릭하고, "`GitHub Copilot app modernization`" 확장을 검색하여 설치합니다.<br>
-  <img src="img/01.png" alt="image" width="400"/><br>
+  <img src="img/01.png" alt="image" width="700"/><br>
 
 - Version upgrade를 위해, Copilot Agent모드로 전환 합니다. <br>
 - Agent 모드에서 도구 모양 아이콘을 클릭하면, `GitHub Copilot app modernization` 도구가 표시됩니다. <br>
-  <img src="img/02.png" alt="image" width="400"/><br>
+  <img src="img/02.png" alt="image" width="700"/><br>
 
 - Copilot Chat에서 아래와 같이 프롬프트를 입력합니다. <br>
   - `Java version을 17로 업그레이드 해주고, Spring Boot 3.4.2로 업그레이드 해줘`
-  <img src="img/03.png" alt="image" width="400"/><br>
+  <img src="img/03.png" alt="image" width="700"/><br>
 
 - GitHub Copilot app modernization 도구가 계정 인증을 진행합니다. <br>
 
-   <img src="img/04.png" alt="image" width="300"/><br>
+   <img src="img/04.png" alt="image" width="700"/><br>
    <img src="img/05.png" alt="image" width="300"/><br>
-   <img src="img/06.png" alt="image" width="300"/><br>
+   <img src="img/06.png" alt="image" width="400"/><br>
 
 - 인증 완료 후, Upgrade plan이 진행됩니다. <br>
-  <img src="img/07.png" alt="image" width="400"/><br>
+  <img src="img/07.png" alt="image" width="700"/><br>
 
 - Language model에 대한 접근 권한을 수락합니다. <br>
-  <img src="img/08.png" alt="image" width="300"/><br>
+  <img src="img/08.png" alt="image" width="600"/><br>
 
 - Upgrad progress를 보여주는 md 파일이 생성됩니다. <br>
-  <img src="img/09.png" alt="image" width="400"/><br>
+  <img src="img/09.png" alt="image" width="700"/><br>
 
 - 사전 점검(Pre-check)으로, 빌드와 테스트가 진행됩니다. <br>
-  <img src="img/10.png" alt="image" width="400"/><br>
-  <img src="img/11.png" alt="image" width="400"/><br>
+  <img src="img/10.png" alt="image" width="700"/><br>
+  <img src="img/11.png" alt="image" width="700"/><br>
 
 - Copilot Chat 창에서도 진행과정이 계속 이어지며 표시됩니다. <br>
-  <img src="img/12.png" alt="image" width="400"/><br>
-  <img src="img/13.png" alt="image" width="400"/><br>
+  <img src="img/12.png" alt="image" width="700"/><br>
+  <img src="img/13.png" alt="image" width="700"/><br>
 
 - 빌드 과정에서 문제가 발견되어 해당 내용이 리포트 되고 수정됩니다. <br>
-  <img src="img/14.png" alt="image" width="400"/><br>
-  <img src="img/15.png" alt="image" width="400"/><br>
+  <img src="img/14.png" alt="image" width="700"/><br>
+  <img src="img/15.png" alt="image" width="700"/><br>
 
 - 컴파일 오류가 발생했습니다. Spring Boot 3의 Spring Security API변경이 필요합니다. <br>
-  <img src="img/16.png" alt="image" width="400"/><br>
-  <img src="img/17.png" alt="image" width="400"/><br>
+  <img src="img/16.png" alt="image" width="700"/><br>
+  <img src="img/17.png" alt="image" width="700"/><br>
 
 - Spring Boot 3에서 Deprecated된 내용이 발견되어 Spring Security 6로 변경합니다. <br>
-  <img src="img/18.png" alt="image" width="400"/><br>
+  <img src="img/18.png" alt="image" width="700"/><br>
 
 - 빌드가 성공하고 변경사항을 커밋하고, CVE 검사를 수행합니다.<br>
-  <img src="img/19.png" alt="image" width="400"/><br>
-  <img src="img/20.png" alt="image" width="400"/><br>
-  <img src="img/21.png" alt="image" width="400"/><br>
+  <img src="img/19.png" alt="image" width="700"/><br>
+  <img src="img/20.png" alt="image" width="700"/><br>
+  <img src="img/21.png" alt="image" width="700"/><br>
 
 - Upgrade가 완료되고 주요 내용이 요약됩니다. <br>
-  <img src="img/22.png" alt="image" width="400"/><br>
+  <img src="img/22.png" alt="image" width="700"/><br>
 
 - 전체 Upgrade 리포트가 md 파일로 생성됩니다. <br>
-  <img src="img/23.png" alt="image" width="400"/><br>
-  <img src="img/24.png" alt="image" width="400"/><br>
+  <img src="img/23.png" alt="image" width="700"/><br>
+  <img src="img/24.png" alt="image" width="700"/><br>
 
 # Step 2: 리팩토링
 - [getDiscoun.py](src/getDiscount.py) 파일의 블럭을 선택하고, GitHub Copilot Chat에 리팩토링을 요청합니다.

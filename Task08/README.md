@@ -44,11 +44,11 @@
 
 - 우측 하단의 GitHub Copilot 아이콘을 클릭하고, '`Edit Settings`'를 선택합니다. <br>
   <img src="./img/02.png" width="300"> <br>
-  <img src="./img/03.png" width="300"> <br>
+  <img src="./img/03.png" width="500"> <br>
 
 - 'Configure'를 클릭하면, mcp.json 파일이 열립니다. <br>
-  <img src="./img/04.png" width="300"> <br>
-  <img src="./img/05.png" width="500"> <br>
+  <img src="./img/04.png" width="600"> <br>
+  <img src="./img/05.png" width="700"> <br>
 
 ## Step 3: MCP 서버 설정하기
 - mcp.json 파일의 "servers" 섹션에 아래 부분을 복사하여 붙여 넣어, MCP 서버를 추가합니다.
@@ -64,8 +64,8 @@
 ```
 
 - 위와 같이 설정한 뒤, Copilot Chat 의 도구 모양 아이콘을 클릭하여 추가된 MCP 서버를 확인합니다. <br>
-  <img src="./img/06.png" width="300"> <br>
-  <img src="./img/07.png" width="400"> <br>
+  <img src="./img/06.png" width="200"> <br>
+  <img src="./img/07.png" width="600"> <br>
 
 
 ## Step 4: 로컬에 Stdio MCP 서버 설정
@@ -126,10 +126,11 @@
             ]
         }
 	```
-  <img src="./img/08.png" width="400"> <br>
+	<br>
+  <img src="./img/08.png" width="700"> <br>
 
-- Agent모드의 MCP Tool에 도구가 추가된 것을 확인합니다. 
-  <img src="./img/09.png" width="400"> <br>
+- Agent모드의 MCP Tool에 도구가 추가된 것을 확인합니다.<br>
+  <img src="./img/09.png" width="700"> <br>
 
 
 ## Step 6: Atlassian MCP 서버와 연결하기

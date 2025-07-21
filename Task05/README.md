@@ -46,9 +46,7 @@
 - IntelliJ IDEA에는 `@project`, `@github`, `@models`와 같은 여러 내장된 채팅 참가자가 있습니다. 이들은 각자의 도메인에 대한 질문에 최적화되어 있습니다.
 
 ### 참고 @project
-- `@projct`는 ([설명링크](https://github.blog/changelog/2025-02-19-boost-your-productivity-with-github-copilot-in-jetbrains-ides-introducing-project-context-ai-generated-commit-messages-and-other-updates/#project-context))
-
-- VS Code의`@workspace`에 해당하며, 이것 Ask 모드에서 사용자가 질문한 내용에 대해 전체 코드베이스에서 관련된 파일들과 심볼들을 검색하고, 이것들을 답변에 참조합니다.  
+- `@projct`는 ([설명링크](https://github.blog/changelog/2025-02-19-boost-your-productivity-with-github-copilot-in-jetbrains-ides-introducing-project-context-ai-generated-commit-messages-and-other-updates/#project-context)) VS Code의`@workspace`에 해당하며, 이것 Ask 모드에서 사용자가 질문한 내용에 대해 전체 코드베이스에서 관련된 파일들과 심볼들을 검색하고, 이것들을 답변에 참조합니다.  
   - [VS Code @workspace 설명문서](https://code.visualstudio.com/docs/copilot/reference/workspace-context)
 
   - `@projct` 는 
@@ -64,10 +62,10 @@
 
 
 ## Step 4: Copilot Chat에서 슬래시 명령(/) 사용하기
-- 슬래시 명령어(/)는 Copilot Chat이 사용자의 질문 의도를 이해하는 데 도움을 줍니다. 예를 들어, 코드베이스를 학습하려는 경우(/explain), 문제 해결을 원할 때(/fix), 테스트 케이스를 만들고 싶을 때(/tests) 사용할 수 있습니다. Copilot Chat에게 여러분이 무엇을 하려는지 알려주면, 해당 작업에 맞게 답변을 조정하고 유용한 명령어, 설정, 코드 스니펫을 제공합니다.
-  - 예를 들어, `Ask` 모드에서 `/tests`를 선택하면, `@workspace /tests` 가 자동으로 입력됩니다. 
-  <img src="img/08.png" width="400"> <br>
-  <img src="img/09.png" width="400"> <br>
+- 슬래시 명령어(/)는 Copilot Chat에게 간단하게 필요한 내용을 전달할 수 있습니다. 예를 들어, 코드베이스를 학습하려는 경우(/explain), 문제 해결을 원할 때(/fix), 테스트 케이스를 만들고 싶을 때(/tests) 사용할 수 있습니다. Copilot Chat에게 여러분이 무엇을 하려는지 알려주면, 해당 작업에 맞게 답변을 조정하고 유용한 명령어, 설정, 코드 스니펫을 제공합니다.
+  
+  <img src="img/08.png" width="600"> <br>
+  
 
 #### 참고: VS Code Chat Variables (#changes, #githubRepo, #githubIssue 등)
 - Copilot Chat은 다양한 변수를 지원합니다. 이 변수들은 `#`으로 시작하며, 특정 작업이나 컨텍스트에 대한 정보를 제공합니다. 예를 들어, `#changes`는 현재 변경된 파일을 나타내고, `#githubRepo`는 GitHub 저장소에 대한 정보를 나타냅니다.
@@ -120,47 +118,16 @@
   - 프롬프트 파일은 `.github/prompts` 디렉토리 또는 사용자 지정에 의한 다른 디렉토리에 저장할 수 있습니다.
   <img src="img/01.png" width="400">
 
-### 프롬프트 파일 구조
-- 메타데이터 헤더
-  - `mode`: 프롬프트 파일에 대한 간단한 설명입니다. 이 설명은 프롬프트 입력 필드의 자리 표시자 텍스트로 표시되며, 프롬프트 파일 드롭다운 목록에서 해당 프롬프트 위에 마우스를 올릴 때 표시됩니다.
-  - `model`: 프롬프트를 실행할 때 사용할 AI 모델입니다. 지정하지 않으면 모델 선택기에서 현재 선택된 모델이 사용됩니다.
-  - `tools`: Agent모드에서 사용할 수 있는 도구 또는 도구 세트의 목록입니다. 여기에는 기본 제공 도구, 도구 세트, MCP 도구 또는 확장 프로그램에서 제공하는 도구가 포함될 수 있습니다. 먼저, Agent모드의 '도구모양 아이콘'(Configure Tools)에서 사용할 도구들을 선택합니다. 프롬프트 파일을 실행할 때, 프롬프트 파일내에 지정된 도구가 Configure Tools에서 지정되어 있지 않다면, 해당 도구는 무시됩니다. 
-  - `description`: 프롬프트에 대한 설명.
-
-- Body with prompt content
-  - 프롬프트 파일은 채팅에서 작성 프롬프트의 형식을 모방합니다. 이를 통해 자연어 지침, 추가 컨텍스트를 혼합하거나 다른 프롬프트 파일을 종속성으로 연결할 수 있습니다. Markdown 형식을 사용하여 프롬프트 콘텐츠를 구조화할 수 있으며, 여기에는 제목, 목록, 코드 블록 등이 포함됩니다.
-  - 워크스페이스 파일, 프롬프트 파일, 또는 지침 파일을 Markdown 링크를 사용하여 참조할 수 있습니다. 이러한 파일을 참조할 때는 상대 경로를 사용하고, 프롬프트 파일의 위치를 기준으로 경로가 올바른지 확인해야 합니다.
-  - 프롬프트 파일 내에서, `${variableName}` syntax를 활용해 다양한 변수들을 참조할 수 있습니다. :
-
-	- Workspace variables - ${workspaceFolder}, ${workspaceFolderBasename}
-	- Selection variables - ${selection}, ${selectedText}
-	- File context variables - ${file}, ${fileBasename}, ${fileDirname}, ${fileBasenameNoExtension}
-	- Input variables - ${input:variableName}, ${input:variableName:placeholder} (pass values to the prompt from the chat input field)
-
 ##### 프롬프트 파일 예시
   - [예시 링크](https://code.visualstudio.com/docs/copilot/copilot-customization#_prompt-file-examples)
 
-##### 프롬프트 파일 생성
-- 실습 프로젝트의 `.github/prompts` 디렉토리에 `test.prompt.md` , `security-check.prompt.md` 파일을 복사하여 활용합니다. <br>
-- 생성을 위해, Copilot Chat 우측 상단의 톱니 바퀴 버튼을 누르고 생성합니다. <br>
-
 ##### 프롬프트 파일 실행
-- [Prompt files를 실행하는 방법](https://code.visualstudio.com/updates/v1_100#_prompt-files)은 3가지가 있습니다. <br>
-	- Copilot Chat에서 '`/`'를 입력하고 Prompt파일 선택. <br>
-	- Prompt 파일을 열고 우측 상단의 'Play' 버튼을 클릭합니다. <br>
-	- Ctrl + Shift + P를 눌러 명령어 팔레트를 열고, `Chat: Run Prompt File..`을 선택합니다. <br>
-
-- 첫번째 방법'/' 을 통해 `/test` Prompt파일을 선택 한 뒤, 아래 예시와 같은 방법을 통해 프롬프트 파일을 실행합니다. <br>
-  - `/test #changes` 
-  - `/test #githubRepo pull request #14` <br>
-  <img src="img/02.png" width="400"> <br>
-  <img src="img/03.png" width="400"> <br>
 
 - security-check 프롬프트 파일을 열고, 우측 상단에 'Play' 버튼을 클릭하여 실행합니다. <br>
   <img src="img/04.png" width="400"> <br>
-  <img src="img/05.png" width="400"> <br>
-  <img src="img/06.png" width="400"> <br>
-  <img src="img/07.png" width="400"> <br>
+  <img src="img/05.png" width="600"> <br>
+  <img src="img/06.png" width="600"> <br>
+  <img src="img/07.png" width="600"> <br>
 
 
 ## 추가자료
