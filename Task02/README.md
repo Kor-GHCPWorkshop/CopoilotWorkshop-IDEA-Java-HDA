@@ -20,7 +20,7 @@
    <img src="img/04.png" alt="image" width="500"/><br>
 
 - 게임을 실행하고, 게임 결과를 출력 받아 봅니다.<br>
-   <img src="img/05.png" alt="image" width="500"/><br>
+   <img src="img/05.png" alt="image" width="700"/><br>
 
 
 ## Step 2: Lizard, Spock 추가하기
@@ -28,13 +28,13 @@
   <img src="img/image.png" width="600"><br>
    
 - `choices` 리스트에 Lizard와 Spock을 추가합니다.<br>
-  <img src="img/06.png" alt="image" width="400"/><br>
+  <img src="img/06.png" alt="image" width="600"/><br>
 
 - 위 image그림 파일을 다운로드하고, resources에 img 디렉토리를 생성하고 그 안에 저장합니다.<br>
-  <img src="img/07.png" alt="image" width="500"/><br>
+  <img src="img/07.png" alt="image" width="700"/><br>
 
 - Copilot Chat에 그림 파일을 드래그하여 추가하고, `첨부된 그림 파일을 설명해 줘` 라고 물어봅니다. <br>
-  <img src="img/08.png" alt="image" width="300"/><br>
+  <img src="img/08.png" alt="image" width="500"/><br>
   <img src="img/09.png" alt="image" width="500"/><br>
 
 - Copilot Chat에서 하단에 +Add Context 버튼을 누르고 Main.java 파일을 선택하여 추가합니다. <br>
@@ -44,19 +44,19 @@
   <img src="img/11.png" alt="image" width="400"/><br>
 
 - Copilot Chat에서 제안된 코드를 확인합니다.<br>
-  <img src="img/12.png" alt="image" width="500"/><br>
-  <img src="img/13.png" alt="image" width="500"/><br>
+  <img src="img/12.png" alt="image" width="600"/><br>
+  <img src="img/13.png" alt="image" width="600"/><br>
 
 - 제안된 코드를 복사하여 붙여 넣습니다. <br>
-  <img src="img/14.png" alt="image" width="400"/><br>
+  <img src="img/14.png" alt="image" width="200"/><br>
 
 - 다시 컴파일하고 실행해 봅니다.<br>
-  <img src="img/15.png" alt="image" width="500"/><br>
+  <img src="img/15.png" alt="image" width="700"/><br>
 
 ## Step 3: 간단히 테스트 실행하기
 - test 디렉토리에 `MainTest.java` 파일을 생성합니다. <br>
-  <img src="img/16.png" alt="image" width="400"/><br>
-  <img src="img/17.png" alt="image" width="400"/><br>
+  <img src="img/16.png" alt="image" width="500"/><br>
+  <img src="img/17.png" alt="image" width="300"/><br>
 - Main의 코드를 전체 선택한 뒤, 마우스 오른쪽 버튼을 클릭하고, `Generate Tests`를 선택합니다. <br>
   <img src="img/18.png" alt="image" width="400"/><br>
 - 제안된 테스트 코드를 확인합니다. <br>
@@ -65,7 +65,7 @@
   <img src="img/20.png" alt="image" width="400"/><br>
 - `MainTest.java`에서 import org.example.Main;를 추가하고, 테스트를 실행하여 결과를 확인합니다. <br>
   <img src="img/21.png" alt="image" width="400"/><br>
-  <img src="img/22.png" alt="image" width="600"/><br>
+  <img src="img/22.png" alt="image" width="800"/><br>
 
 ## 지식 확인:
 - 코드 완성 기능과, Copilot Chat 기능의 차이점

@@ -66,17 +66,17 @@
   - [instructions 파일 예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_custom-instructions-examples) <br>	  
 
 ### `settings.json` 파일에 설정
-	  - "text", 혹은 "file"을 지정할 수 있습니다. 
+- "text", 혹은 "file"을 지정할 수 있습니다. 
 
-	 	| Instruction 유형                | 설정 이름                                           |
-		|---------------------------------|----------------------------------------------------|
-		| 코드 리뷰                       | `github.copilot.chat.reviewSelection.instructions` |
-		| 커밋 메시지 생성                | `github.copilot.chat.commitMessageGeneration.instructions` |
-		| 풀 리퀘스트 제목 및 설명 생성   | `github.copilot.chat.pullRequestDescriptionGeneration.instructions` |
-		| 코드 생성 (Deprecated)          | `github.copilot.chat.codeGeneration.instructions` |
-		| 테스트 생성 (Deprecated)        | `github.copilot.chat.testGeneration.instructions` |
+| Instruction 유형                | 설정 이름                                           |
+|---------------------------------|----------------------------------------------------|
+| 코드 리뷰                       | `github.copilot.chat.reviewSelection.instructions` |
+| 커밋 메시지 생성                | `github.copilot.chat.commitMessageGeneration.instructions` |
+| 풀 리퀘스트 제목 및 설명 생성   | `github.copilot.chat.pullRequestDescriptionGeneration.instructions` |
+| 코드 생성 (Deprecated)          | `github.copilot.chat.codeGeneration.instructions` |
+| 테스트 생성 (Deprecated)        | `github.copilot.chat.testGeneration.instructions` |
 
-	  - [설정예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_specify-custom-instructions-in-settings) <br>
+- [설정예시](https://code.visualstudio.com/docs/copilot/copilot-customization#_specify-custom-instructions-in-settings) <br>
 
 	
 ## Step 4: Custom instructions 파일 생성, 수정하기 

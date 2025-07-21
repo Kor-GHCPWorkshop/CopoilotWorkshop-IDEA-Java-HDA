@@ -11,10 +11,10 @@
 
 ## Step 1 : 기본 함수 작성
 - IntelliJ IDEA를 열고, 새로운 프로젝트를 시작합니다. <br> 
-  <img src = "img/01.png" width = "400">
+  <img src = "img/01.png" width = "500">
 - 아래의 주석을 입력 합니다.<br>
   `// factorial 메서드 추가 `<br>
-  <img src = "img/02.png" width = "400">
+  <img src = "img/02.png" width = "500">
 
 - 회색으로 제안된 코드를 확인하고, Tab키를 눌러서 코드를 완성합니다.<br>
    <img src = "img/03.png" width = "400">
@@ -30,7 +30,7 @@
   <img src = "img/06.png" width = "400">
 
 - 마우스 오른 버튼을 클릭하여 'Copilot' 메뉴의 'generate_docs'를 선택합니다.<br>
-    <img src = "img/07.png" width = "500"> 
+    <img src = "img/07.png" width = "600"> 
 
 
 ## Step 3 : 코드 완성 기능의 컨텍스트 이해하기
@@ -40,16 +40,16 @@
    - `/src` 디렉토리의 `url_tools.java`, `MyUrl.java` 파일 내용을 현재 실습하는 워크스페이스로 복사 <br>
 
    - 복사된 내용의 파일은 오픈된 상태로 두고, 이 파일을 import한 (예시의 '`MyUrl.java`')  파일의 마지막 라인에서 키보드의 Enter를 누르면 아래와 같이 함수가 제안됩니다.<br>   
-    <img src = "img/08.png" width = "500">
-	<img src = "img/09.png" width = "500">
+    <img src = "img/08.png" width = "600">
+	<img src = "img/09.png" width = "600">
 
 
 ## Step 4 : IntelliJ IDEA의 Copilot 설정 메뉴
 - Intelli J IDEA의 우측 하단의 Copilot 아이콘을 클릭하고 `Edit Settings`를 선택합니다.<br>
   <img src = "img/10.png" width = "400">
 - `Chat`을 선택하고, Natural Language를 '한국어'로 설정합니다. <br>
-  <img src = "img/11.png" width = "300">
-  <img src = "img/12.png" width = "300">
+  <img src = "img/11.png" width = "400"> <br>
+  <img src = "img/12.png" width = "400"> <br>
 
 - Code완성 기능의 기본 모델을 변경해 봅니다.<br>
   - `Completions` 클릭하고, `Model for completions`를 클릭해 봅니다.<br>

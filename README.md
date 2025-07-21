@@ -31,8 +31,6 @@
  - Copilot을 통해 테스트 코드를 작성해 봅니다.
  - Copilot chat의 각종 메뉴들을 사용해 봅니다.
 
- 
-
 ## [Task 3](/Task03/README.md): Spring Boot 기반 Todo App 개발 (Part 1)
 - 프로젝트를 구성하기 위해, Copilot에게 Custom instruction을 제공하는 방법을 실습합니다.
 - Copilot으로 Commit message를 자동 생성해 봅니다. 이 때, 원하는 형태의 Commit message를 생성하기 위해, Custom instruction을 활용합니다.
@@ -40,6 +38,7 @@
 
 ## [Task 4](/Task04/README.md): Spring Boot 기반 Todo App 개발 (Part 2)
 - 이전 Task03(Part 1)에서 생성된 커스텀 instructions를 활용하여 Agent모드에서 Spring Boot 기반 Todo App을 실제로 빌드합니다. 
+- GitHub Copilot의 프리미엄 리퀘스트에 대해 학습합니다.
 - Agent 모드에서 개발과정의 내용을 커밋하고 , 커밋 메시지를 작성하도록 프롬프트로 요청합니다. 
 - TODO앱에 '즐겨찾'를 추가하는 기능도 Agent 모드에서 구현합니다
 
