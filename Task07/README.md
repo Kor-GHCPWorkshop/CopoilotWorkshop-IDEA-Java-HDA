@@ -168,7 +168,7 @@
   ```
 <br>
 
-- 위 설정에서 JIRA 관련 부분은 삭제하고, Confluence 관련 부분만 남기고 설정합니다.
+- 위 설정에서 JIRA 관련 부분은 삭제하고, Confluence 관련 부분만 남기고 설정합니다.<br>
 
 <img src="./img/17.png" width="700"> <br>
 
