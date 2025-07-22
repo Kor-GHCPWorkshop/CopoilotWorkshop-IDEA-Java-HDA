@@ -133,7 +133,7 @@
   <img src="./img/09.png" width="700"> <br>
 
 
-## Step 6: Atlassian MCP 서버와 연결하기
+## Step 5: Atlassian MCP 서버와 연결하기
 - Atlassian MCP 서버를 설정하여, Jira와 Confluence와 같은 Atlassian 제품과 통합할 수 있습니다.
 - Atlassian에서 제공하는 MCP서버는 Remote MCP 서버로 설정할 수 있습니다.(https://www.atlassian.com/platform/remote-mcp-server)
 - 로컬에서 도커로 실행가능한, https://github.com/sooperset/mcp-atlassian 의 MCP서버를 설정할 수 있습니다. 
@@ -167,19 +167,47 @@
     }
   ```
 <br>
+
+- 위 설정에서 JIRA 관련 부분은 삭제하고, Confluence 관련 부분만 남기고 설정합니다.
+
 <img src="./img/17.png" width="700"> <br>
-<img src="./img/18.png" width="700"> <br>
 
-
-  - 사용가능한 Tool 확인
-    - `confluence_search`: Search Confluence content using CQL
-	- `confluence_get_page`: Get content of a specific page
-	- `confluence_create_page`: Create a new page
-	- `confluence_update_page`: Update an existing page
-
-## Step 7: MCP 로그 확인하기
+## Step 6: MCP 로그 확인하여 Atlassian MCP 서버와의 연결 확인 
 - 좌측 하단에 GitHub Copilot MCP Log' 버튼을 클릭하여 MCP 로그를 확인합니다. <br>
  <img src="./img/16.png" width="400"> <br>
+ <img src="./img/18.png" width="700"> <br>
+ <img src="./img/19.png" width="600"> <br>
+
+- 사용가능한 Tool 확인
+- `confluence_search`: Search Confluence content using CQL
+- `confluence_get_page`: Get content of a specific page
+- `confluence_create_page`: Create a new page
+- `confluence_update_page`: Update an existing page
+
+## Step 7: Atlassian MCP 도구 사용하기
+- Confluence MCP 도구를 사용하여, Confluence 페이지를 검색하거나, 페이지 내용을 가져오거나, 새 페이지를 생성하는 등의 작업을 수행할 수 있습니다. <br>
+- `confluence에 회의록 리스트 보여줘` <br>
+ <img src="./img/20.png" width="600"> <br>
+ <img src="./img/21.png" width="600"> <br>
+
+- `위 회의록을 요약해주고, 개발할 내용을 알려줘` <br>
+ <img src="./img/22.png" width="600"> <br>
+ <img src="./img/23.png" width="600"> <br>
+ <img src="./img/24.png" width="600"> <br>
+
+- `현재 confluence의 디렉토리 목록 보여줘` <br>
+ <img src="./img/25.png" width="600"> <br>
+ <img src="./img/26.png" width="600"> <br>
+
+- `Confluence API디렉토리내 공통 문서 내용 요약 해줘` <br>
+ <img src="./img/27.png" width="600"> <br>
+ <img src="./img/28.png" width="600"> <br>
+
+
+- `위 API문서 중, "알림 서비스(notification-service)" API를 현재 프로젝트에 구현하기 위한 코드를 제안해줘` <br>
+ <img src="./img/29.png" width="600"> <br>
+ <img src="./img/30.png" width="600"> <br>
+
 
 ## 지식 확인
 - MCP의 구조와 기능, 연결 방법은 어떤 것들이 있습니까?
