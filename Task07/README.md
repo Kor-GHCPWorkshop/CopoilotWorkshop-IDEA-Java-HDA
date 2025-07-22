@@ -175,14 +175,14 @@
 ## Step 6: MCP 로그 확인하여 Atlassian MCP 서버와의 연결 확인 
 - 좌측 하단에 GitHub Copilot MCP Log' 버튼을 클릭하여 MCP 로그를 확인합니다. <br>
  <img src="./img/16.png" width="400"> <br>
- <img src="./img/18.png" width="700"> <br>
  <img src="./img/19.png" width="600"> <br>
+ <img src="./img/18.png" width="600"> <br>
 
 - 사용가능한 Tool 확인
-- `confluence_search`: Search Confluence content using CQL
-- `confluence_get_page`: Get content of a specific page
-- `confluence_create_page`: Create a new page
-- `confluence_update_page`: Update an existing page
+	- `confluence_search`: Search Confluence content using CQL
+	- `confluence_get_page`: Get content of a specific page
+	- `confluence_create_page`: Create a new page
+	- `confluence_update_page`: Update an existing page
 
 ## Step 7: Atlassian MCP 도구 사용하기
 - Confluence MCP 도구를 사용하여, Confluence 페이지를 검색하거나, 페이지 내용을 가져오거나, 새 페이지를 생성하는 등의 작업을 수행할 수 있습니다. <br>
