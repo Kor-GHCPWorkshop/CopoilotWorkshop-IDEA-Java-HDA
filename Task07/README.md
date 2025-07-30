@@ -95,14 +95,6 @@
 		"""Add two numbers"""
 		return a + b
 
-	# Add tool to get the document content
-	@mcp.tool()
-	def get_document_content() -> str:
-		"""Get the content of a document"""
-		doc_name = "../doc/06.CopilotStandalone.md"
-		with open(doc_name, "r", encoding="utf-8") as f:
-			return f.read()
-
 	# Add a dynamic greeting resource
 	# @mcp.resource("greeting://{name}")
 	# def get_greeting(name: str) -> str:
